@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Post 1</title>
+</head>
+
+<body id="home">
+
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"><i class="fas fa-chart-line"></i> Full</span>Senders
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Blog</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>Blog Post 1</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>Ansley Baker</strong> | May 03 2020
+            </p>
+            <img src="/image_resources/blog/blog1.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illo expedita quo soluta ex voluptatem
+                aspernatur minus iusto id earum nemo qui, adipisci deserunt consectetur porro! Ut dolorum natus
+                sapiente.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic laboriosam vitae, sapiente tempora aut
+                repudiandae, dolore molestiae, distinctio nemo suscipit voluptatum doloremque cupiditate illum qui!
+                Dolorem consequuntur saepe voluptas, neque vel architecto mollitia optio quaerat sit. Inventore, et
+                eveniet deserunt nisi, temporibus ducimus magni enim officiis cupiditate, animi ut accusantium ratione
+                aut dolores. Consequatur voluptatum et debitis labore dolor repellendus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae ullam voluptatum. Modi deleniti
+                id, rerum provident nulla animi quibusdam, maxime quasi fuga blanditiis dolor, minus perferendis ex.
+                Commodi voluptas asperiores fugiat accusantium cumque cupiditate nulla eaque qui. Exercitationem
+                delectus voluptatem provident doloremque soluta nobis facere laudantium sequi doloribus nemo!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati assumenda aspernatur recusandae vel
+                possimus. Magni voluptates eaque corrupti hic architecto quis modi, omnis, eveniet debitis consectetur
+                cum repellendus, suscipit sequi rem facilis fugit saepe praesentium ipsa id soluta. Totam officiis
+                suscipit quos officia assumenda eaque reiciendis doloremque eum optio deleniti! Sunt tempore enim quia
+                nostrum reiciendis cupiditate optio praesentium possimus! Obcaecati praesentium cumque aut error earum
+                incidunt aliquid ab dolore ducimus cum dolores distinctio, quasi in accusantium eos a nulla, suscipit
+                ullam. Expedita animi sit sint eius eligendi. Odio dolore minus eos quos, rem esse suscipit at cum
+                assumenda eum officia necessitatibus ex enim facilis quibusdam laborum quaerat soluta distinctio fuga
+                neque obcaecati sapiente accusamus? Cumque enim temporibus explicabo reiciendis.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2020 - FullSenders</p>
+    </footer>
+    <!-- scripts -->
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)'
+
+                }
+                setTimeout(() => {
+                    navbar.style.transform = 'translateY(0px)'
+                    scrolled = true;
+                }, 0);
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        };
+    </script>
+</body>
+
+</html>
